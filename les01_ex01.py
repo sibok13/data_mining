@@ -1,7 +1,6 @@
 import requests
 import time
 
-
 class Parser5ka:
     _domain = 'https://5ka.ru/'
     _api_path = 'api/v2/special_offers/'
