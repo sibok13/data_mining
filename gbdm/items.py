@@ -31,3 +31,15 @@ class YoulaItem(scrapy.Item):
     param = scrapy.Field(input_processor=MapCompose(get_params))
     descrip = scrapy.Field(output_processor=TakeFirst())
     price = scrapy.Field(input_processor=MapCompose(validate_price))
+
+class InsHashTagItem(scrapy.Item):
+    _id = scrapy.Field()
+    data = scrapy.Field()
+
+class InsPostItem(scrapy.Item):
+    _id = scrapy.Field()
+    data = scrapy.Field()
+
+class InsUserItem(scrapy.Item):
+    _id = scrapy.Field()
+    data = scrapy.Field()
